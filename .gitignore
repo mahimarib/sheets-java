@@ -1,0 +1,22 @@
+# IntelliJ
+
+/.idea/
+*.iml
+
+# Gradle
+
+/gradle/
+/.gradle/
+gradlew
+gradlew.bat
+settings.gradle
+
+# Credentials
+
+/tokens/
+*json
+
+# Build
+
+/build/
+/out/
