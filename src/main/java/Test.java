@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Test {
-
     public static void main(String... args)
     throws IOException, GeneralSecurityException {
         Sheets service = Utils.getSheets();
@@ -23,7 +22,8 @@ public class Test {
             }
             writeData.add(row);
         }
-        ValueRange vr = new ValueRange().setValues(writeData).setMajorDimension("ROWS");
+        ValueRange vr = new ValueRange().setValues(writeData).setMajorDimension(
+                "ROWS");
         service.spreadsheets().values()
                .update(ssID, range, vr)
                .setValueInputOption("RAW")
