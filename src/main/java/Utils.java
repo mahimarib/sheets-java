@@ -22,19 +22,19 @@ import java.util.Collections;
 import java.util.List;
 
 public class Utils {
-    public static final String APPLICATION_NAME
+    private static final String APPLICATION_NAME
             = "Google Sheets API Java Quickstart";
-    public static final JsonFactory JSON_FACTORY = JacksonFactory
+    private static final JsonFactory JSON_FACTORY = JacksonFactory
             .getDefaultInstance();
-    public static final String TOKENS_DIRECTORY_PATH = "tokens";
+    private static final String TOKENS_DIRECTORY_PATH = "tokens";
 
     /**
      * Global instance of the scopes required by this quickstart.
      * If modifying these scopes, delete your previously saved tokens/ folder.
      */
-    public static final List<String> SCOPES = Collections.singletonList(
+    private static final List<String> SCOPES = Collections.singletonList(
             SheetsScopes.SPREADSHEETS);
-    public static final String CREDENTIALS_FILE_PATH = "credentials.json";
+    private static final String CREDENTIALS_FILE_PATH = "credentials.json";
 
     /**
      * Creates an authorized Credential object.
