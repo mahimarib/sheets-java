@@ -71,8 +71,8 @@ public class Utils {
                 GoogleNetHttpTransport.newTrustedTransport();
         return new Sheets.Builder(
                 transport,
-                Utils.JSON_FACTORY,
-                Utils.getCredentials(transport)).setApplicationName(
-                Utils.APPLICATION_NAME).build();
+                JSON_FACTORY,
+                getCredentials(transport)).setApplicationName(
+                APPLICATION_NAME).build();
     }
 }
